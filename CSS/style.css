@@ -25,7 +25,7 @@ body{
 }
 header{
     background-color: white;
-    box-shadow: 2 px 10px rgba(0,0,0.05);
+    box-shadow: 2px 10px rgba(0,0,0.05);
     position: sticky;
     Top: 0;
     z-index: 100;
@@ -159,4 +159,61 @@ section h2::after{
     color: var(--gris-fonce);
     font-size: 1.3rem;
 
+}
+.compétences table{
+    width:80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #FFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.compétences table th, .compétences table td {
+    padding: 15px;
+
+}
+.compétences table thead{
+    background-color: var(--violet-doux);
+    color: #FFF;
+    text-transform: uppercase;
+}
+.compétences table tbody td{
+    border-bottom: 1px solid var(--gris-clair);
+}
+.compétences table tbody tr:nth-child(even){
+    background-color: #fdfdfd;
+
+}
+.compétences table tbody tr{
+    transition: backgraund-color 0.3s ease;
+}
+.compétences table tbody tr:hover{
+    background-color: #f0f0f0;
+    text-align: left;
+}
+footer{
+
+margin-top: 3rem ;
+background-color:var(--violet-doux);
+padding: 3rem;
+text-align: center;
+}
+footer p{
+    color:white;
+    margin-bottom: 1.2rem;
+}
+footer a{
+    display: inline-flex;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    
+}
+footer a:hover{
+    color: var(--orange-vif);
+    transform:translateY(-3px);
+    
 }
