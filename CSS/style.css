@@ -217,3 +217,227 @@ footer a:hover{
     transform:translateY(-3px);
     
 }
+/* --- SECTION PRINCIPALE (MAIN) --- */
+main {
+    padding: 60px 8%;
+    background-color: #ffffff;
+}
+
+/* Titre "Mes réalisations" */
+main h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6c5ce7; /* Le violet de la photo */
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Petite barre sous le titre */
+main h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #6c5ce7;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Conteneur de la grille (le div qui enveloppe les articles) */
+main > section > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* --- STYLE DES CARTES (ARTICLES) --- */
+article {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+article:hover {
+    transform: translateY(-10px);
+}
+
+/* Images des projets */
+article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 4px solid #6c5ce7; /* Liseré violet sous l'image */
+}
+
+/* Conteneur des textes (Titre + Description) */
+article div:nth-of-type(1) {
+    padding: 20px 20px 10px 20px;
+}
+
+article h3 {
+    color: #6c5ce7;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+article p {
+    color: #636e72;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Tags (Technologies / Spans) */
+article div:nth-of-type(2) {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+article span {
+    background-color: #f0eeff;
+    color: #6c5ce7;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Liens en bas de carte (Code / Démo) */
+article div:last-of-type {
+    margin-top: auto; /* Pousse les liens vers le bas */
+    padding: 15px 20px;
+    border-top: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+
+article a {
+    text-decoration: none;
+    color: #2d3436;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+}
+
+article a:hover {
+    color: #6c5ce7;
+}
+
+/* Icônes dans les liens */
+article i {
+    font-size: 1rem;
+}
+/* Styles pour la page Contact */
+.contact-container {
+    max-width: 1000px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.contact-info {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--gris-fonce);
+}
+
+.social-apps {
+    margin-top: 2rem;
+}
+
+.app-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+.app-link:hover {
+    opacity: 0.8;
+}
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--gris-tres-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.btn-submit {
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+}
