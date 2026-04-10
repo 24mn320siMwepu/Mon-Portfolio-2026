@@ -441,3 +441,168 @@ article i {
         flex-direction: column;
     }
 }
+/* --- STYLES SPECIFIQUES PAGE PASSION --- */
+.passion-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.passion-intro {
+    text-align: center;
+    color: var(--gris-fonce);
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.passion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.passion-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-5px);
+}
+
+.passion-card i {
+    font-size: 3rem;
+    color: var(--violet-doux);
+    margin-bottom: 1.5rem;
+}
+
+.passion-card h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 1rem;
+}
+
+.passion-form-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.passion-form-section h3 {
+    text-align: center;
+    color: var(--violet-doux);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.passion-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* On réutilise les styles .form-group et .btn-submit déjà présents dans ton CSS */
+.passion-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.passion-form input {
+    border: 1px solid var(--gris-clair);
+    background-color: var(--gris-tres-clair);
+    transition: border-color 0.3s ease;
+}
+
+.passion-form input:focus {
+    outline: none;
+    border-color: var(--violet-doux);
+}
+/* --- STYLES PAGE DIVERTISSEMENT --- */
+.divertissement-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.div-intro {
+    text-align: center;
+    color: var(--gris-fonce);
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+}
+
+.div-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2.5rem;
+}
+
+.div-card {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.1);
+}
+
+.div-icon {
+    background-color: var(--gris-tres-clair);
+    color: var(--violet-doux);
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.div-info h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 0.5rem;
+}
+
+.div-extra {
+    margin-top: 5rem;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--violet-doux);
+    color: white;
+    border-radius: 20px;
+}
+
+.div-extra h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Responsive pour tablettes/mobiles */
+@media (max-width: 600px) {
+    .div-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .div-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .div-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

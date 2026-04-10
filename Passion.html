@@ -27,7 +27,81 @@
 
         </nav>
     </header>
-    <main>mes passions</main>
+    <main>
+    <section class="passion-container">
+        <h2>Mes Passions</h2>
+        <p class="passion-intro">Découvrez ce qui m'anime au quotidien en dehors de mes études en informatique.</p>
+        
+        <div class="passion-grid">
+            <article class="passion-card">
+                <i class="fas fa-code"></i>
+                <h3>Développement Web</h3>
+                <p>Créer des interfaces modernes et interactives est pour moi une véritable forme d'art.</p>
+            </article>
+
+            <article class="passion-card">
+                <i class="fas fa-brain"></i>
+                <h3>Intelligence Artificielle</h3>
+                <p>Explorer comment les machines apprennent et transforment notre façon de vivre.</p>
+            </article>
+
+            <article class="passion-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Design Graphique</h3>
+                <p>L'esthétique visuelle est essentielle pour offrir une expérience utilisateur mémorable.</p>
+            </article>
+            <article class="passion-card">
+                <i class="fas fa-gamepad"></i>
+                <h3> Game Design</h3>
+                <p>Concevoir des mécaniques de jeu, des univers.
+                Concevoir des mécaniques de jeu captivantes et des univers immersifs pour les joueurs.</p>
+            </article>
+            <article class="passion-card">
+                <i class="fas fa-cube"></i>
+                <h3>Infographie 3/ Animation</h3>
+                <p> modélisation, rendu, effets spéciaux(blender,unreal Engine).
+                    Modéliser des objets et des environnements en trois dimensions pour donner vie à l'imaginaire</p>
+            </article>
+            <article class="passion-card">
+                <i class="fas fa-server"></i>
+                <h3>Administration systèmes & reseaux</h3>
+                <p> Architecturer des infrastructures fiables, sécuriser les données et assurer la connectivité des systèmes complexes.</p>
+            </article>
+        </div>
+
+        <div class="passion-form-section">
+            <h3>Partagez vos passions avec moi</h3>
+            <form action="#" method="POST" class="passion-form">
+                <div class="form-group">
+                    <label for="nom-passion">Nom de votre passion</label>
+                    <input type="text" id="nom-passion" name="nom-passion" placeholder="Ex: Photographie">
+                </div>
+                
+                <div class="form-group">
+                    <label for="categorie">Catégorie</label>
+                    <input type="text" id="categorie" name="categorie" placeholder="Ex: Sport, Art, Tech">
+                </div>
+
+                <div class="form-group">
+                    <label for="frequence">Fréquence de pratique</label>
+                    <input type="text" id="frequence" name="frequence" placeholder="Ex: Tous les jours">
+                </div>
+
+                <div class="form-group">
+                    <label for="depuis-quand">Pratique depuis</label>
+                    <input type="text" id="depuis-quand" name="depuis-quand" placeholder="Ex: 2 ans">
+                </div>
+
+                <div class="form-group">
+                    <label for="motivation">Pourquoi cette passion ?</label>
+                    <input type="text" id="motivation" name="motivation" placeholder="Ce que vous aimez dedans">
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer mes infos</button>
+            </form>
+        </div>
+    </section>
+</main>
 
 
      <footer>
